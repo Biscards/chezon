@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Biscard Chezon</title>
+</head>
+
+<style>
+    .card {
+        border-radius: 15px;
+        position: relative;
+        height: 550px;
+        width: 300px;
+        background-color: #e9e5e6;
+        margin: 40px auto;
+    }
+    
+    .header {
+        position: absolute;
+        height: 0px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-image: linear-gradient(to right, #3F0071, #610094);
+    }
+    
+    .header img {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        left: 23px;
+        top: 10px;
+    }
+    
+    .header h3 {
+        position: absolute;
+        font-family: sans-serif;
+        color: #ecccbe;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        top: 150px;
+        left: 100px;
+    }
+    
+    .header p {
+        position: absolute;
+        font-family: sans-serif;
+        color: #ecccbe;
+        font-size: 16px;
+        top: 180px;
+        left: 30px
+    }
+    
+    .body {
+        position: absolute;
+        height: 126px;
+        left: 5px;
+        right: 5px;
+        top: 44.2%;
+       
+        
+    }
+    
+    .body ul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+    
+    .body ul li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        height: 40px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: #d2bb97(255, 0, 0);
+        transition: all .3s ease-in-out;
+    }
+    
+    .body ul li p,
+    h3,
+    i {
+        position: absolute;
+    }
+    
+    .body ul li h3 {
+        top: -17px;
+        left: 58px;
+        color: #610094;
+    }
+    
+    .body ul li p {
+        top: 14px;
+        left: 59px;
+        font-size: 12px;
+        font-family: sans-serif;
+        color: #b98a7c;
+    }
+    
+    .body ul li i {
+        left: 8px;
+        top: 7px;
+        color: #ecccbe;
+        font-size: 26px;
+    }
+    
+    .body ul li:nth-child(1) {
+        top: -16px;
+    }
+    
+    .body ul li:nth-child(2) {
+        top: 26px;
+    }
+    
+    .body ul li:nth-child(3) {
+        top: 68px;
+    }
+    
+    .body ul li:nth-child(1) i {
+        left: 12px;
+    }
+    
+    .body li:hover {
+        background-color: rgb(218, 214, 215);
+        cursor: pointer;
+    }
+	 .body1 {
+        position: absolute;
+        height: 80px;
+        left: 5px;
+        right: 5px;
+        top: 67%;
+        background-color:#e6cda6(255, 0, 0);
+        
+    }
+    
+    .body1 ul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+    
+    .body1 ul li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        height: 40px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color:#ffffff(250, 25, 10);
+        transition: all .3s ease-in-out;
+    }
+    
+    .body1 ul li p,
+    h3,
+    i {
+        position: absolute;
+    }
+    
+    .body1 ul li h3 {
+        top: -17px;
+        left: 58px;
+        color: #000000;
+    }
+    
+    .body1 ul li p {
+        top: 14px;
+        left: 59px;
+        font-size: 12px;
+        font-family: sans-serif;
+        color: #b98a7c;
+    }
+    
+    .body1 ul li i {
+        left: 8px;
+        top: 7px;
+        color: #ebccbe;
+        font-size: 26px;
+    }
+    
+    .body1 ul li:nth-child(1) {
+        top: -16px;
+    }
+    
+    .body1 ul li:nth-child(2) {
+        top: 26px;
+    }
+    
+    .body1 ul li:nth-child(3) {
+        top: 68px;
+    }
+    
+    .body1 ul li:nth-child(1) i {
+        left: 12px;
+    }
+    
+    .body1 li:hover {
+        background-color: rgb(218, 214, 215);
+        cursor: pointer;
+    }
+    /*footer*/
+    
+    .footer {
+        border-radius: 15px;
+        position: absolute;
+        height: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to right,#edd5ca, #f6e4dc);
+    }
+    
+    .footer ul {
+        position: absolute;
+        left: 6px;
+    }
+    
+    .footer ul li {
+        display: inline-block;
+        margin-left: 60px;
+    }
+    
+    .footer ul li i {
+        font-size: 30px;
+        color: #faf5ef;
+        transition: all .3s ease-in;
+    }
+    
+    .footer ul li:hover i {
+        transform: scale(0.9);
+        color: #b18172;
+        cursor: pointer;
+        border-bottom: 2px solid rgb(113, 102, 102);
+    }
+
+.download-btn{
+    position: absolute;
+    background-color: #ecccbe;
+    color: white;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius:8px;
+}
+
+.download-btn:hover {
+    background-color: #b9897b;
+  }
+
+</style>
+
+<body>
+
+    <div class="card">
+        <div class="header">
+            <img src="logo.png">
+            
+        </div>
+
+        <div class="body">
+            <ul>
+                <li>
+                    <h3><a href="tel:+35699884240">99884240</a></h3>
+                    <p>Mobile number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <h3><a href="https://wa.me/+35699884240">99884240</a></h3>
+                    <p>Whatsapp</p>
+                    <i class="fab fa-whatsapp"></i>
+                </li>
+                <li>
+                    <h3><a href="https://www.google.com/maps/place/Balzan/@35.8973674,14.4428317,16z/data=
+                        !3m1!4b1!4m5!3m4!1s0x130e501f20334267:0x18f1fbf2c391c9e6!8m2!3d35.8957414!4d14.4534065
+                        ">Balzan, Malta</a></h3>
+                    <p>Location</p>
+                    <i class="fas fa-map-marked"></i>
+                </li>
+			</ul>
+			
+        </div>
+    <div class="body1">
+            <ul>
+                <li>
+                    <h3><a href="mailto:chezon21@gmail.com">Chezon</a></h3>
+                    <p>Email address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    
+                </li>
+			</ul>
+			
+        </div>
+        <div class="footer">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/chezonaccessories"><i class="fab fa-facebook-f"></i></a>
+                </li>
+               
+                <li>
+                   <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fchezonaccessories
+                   %3Figshid%3DYmMyMTA2M2Y%253D%26fbclid%3DIwAR3bkRJlSGSPteZoj1IJA8Hb-g8ZFe6-Cwe1WM_XpUho6RAd32AsvZRjrVg&h=AT0w3INHMxEd7enwitTiDma88Bvm3mYinKwyFBM5LeEskN5kDQ8d48tPmK
+                   VkyO_aTNtWtFObvd416Zkjap7XewKyuCtMEdvpA5YGjPKVmV5s4GoEBH2BwZTJ3gkCdT4yfkU"> <i class="fab fa-instagram"></i></a>
+                </li>
+                
+            </ul>
+        </div>
+        <body2>
+            <a href="./card.png" download='image' class="download-btn">Save Card 
+                
+            </a>
+        </body2>
+
+    </div>
+
+</body>
+
+</html>
